@@ -39,10 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
-EXTENDED_APPS = [
-    "user_profile",
-    "user_authenticate",
-]
+EXTENDED_APPS = ["user_profile", "user_authenticate", "feeds"]
 
 INSTALLED_APPS += EXTENDED_APPS
 
