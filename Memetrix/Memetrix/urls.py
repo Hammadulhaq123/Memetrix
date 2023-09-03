@@ -27,6 +27,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path("", home, name="home"),
     path("login/", log_in, name="login"),
+    path("logout/", logout_page, name="logout"),
     path("signup/", sign_up, name="signup"),
     path("profile/", profile, name="Profile"),
     path("feeds/", feeds, name="Feeds"),
