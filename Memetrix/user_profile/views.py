@@ -7,4 +7,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(redirect_field_name="login_required", login_url="/login/")
 def profile(request):
-    return HttpResponse("<h1>This is the profile page</h1>")
+    return render(request, "profile.html")

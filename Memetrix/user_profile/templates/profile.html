@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+
+    <title>title</title>
+
+</head>
+
+<body class="bg-[#262626]">
+    <div class="overflow-x-hidden p-10 w-full h-auto flex flex-col gap-8 items-center justify-start">
+        <div class='w-full h-auto flex flex-col gap-1 justify-start items-center text-center'>
+            <p
+                class="heading3 font-poppins font-semibold xs:text-[32px] text-[28px] text-white xs:leading-[65.8px] leading-[60.8px]">
+                Profile</p>
+            <h1 class=" text-5xl font-extrabold text-blue-500">Hammad ul haq</h1>
+            <p class=" font-poppins font-normal text-white text-[18px] leading-[30.8px]">lorem ipsum dolor summit is
+                an old pattern to describe random words</p>
+
+        </div>
+        <div class=' w-full h-auto  flex flex-wrap gap-8 justify-center items-start'>
+            <div
+                class='rectangle bg-[#0e0e10] h-[25rem] py-10 px-4 w-full sm:w-80 flex flex-col items-center justify-start gap-4 rounded-2xl'>
+                <img class="w-[4.8rem] h-[4.8rem] rounded-full"
+                    src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                <div class='link-cont w-full h-auto gap-4 flex flex-col py-6'>
+                    <a class="w-full h-20 rounded-full transition-all hover:border hover:border-blue-500 px-6 py-1 bg-[#1c1c1c] text-white text-lg font-bold flex gap-4 justify-start items-center"
+                        href="/info/pro">
+                        <i class='fa-solid fa-trash text-white'></i>
+                        <span class='text-white text-lg'>Delete Account</span>
+                    </a>
+
+                    <a class="w-full h-20 rounded-full transition-all hover:border hover:border-blue-500 px-6 py-1 bg-[#1c1c1c] text-white text-lg font-bold flex gap-4 justify-start items-center"
+                        href="/logout/">
+                        <i class='fa-solid fa-right-from-bracket text-white'></i>
+                        <span class='text-white text-lg'>Logout</span>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class='square-cont flex gap-4 justify-center items-start flex-wrap w-full sm:w-[40rem] h-auto'>
+                <div
+                    class=' h-48 w-full sm:w-72 rounded-xl py-4 px-4 flex flex-col gap-2 justify-center bg-[#0e0e10] items-center'>
+                    <i
+                        class='fa-solid fa-id-badge text-4xl w-16 h-20 flex justify-center items-center text-white rounded-full border border-blue-500'></i>
+                    <span class='text-2xl text-white font-bold'>{{request.user.first_name}}
+                        {{request.user.last_name}}</span>
+                    <button
+                        class="w-full h-12 rounded-full bg-transparent transition-all hover:scale-105 border border-blue-500 text-white text-xl font-normal">Change
+                        Name</button>
+                </div>
+                <div
+                    class=' h-48 w-full sm:w-72 rounded-xl py-4 px-4 flex flex-col gap-2 justify-center bg-[#0e0e10] items-center'>
+                    <i
+                        class='fa-solid fa-envelope text-4xl text-white rounded-full w-16 h-20 flex justify-center items-center border border-blue-500'></i>
+                    <span class='text-2xl text-white font-bold'>{{request.user.email}}</span>
+                    <button
+                        class="w-full h-12 rounded-full bg-transparent transition-all hover:scale-105 border border-blue-500 text-white text-xl font-normal">Change
+                        Email</button>
+                </div>
+                <div
+                    class=' h-48 w-full sm:w-72 rounded-xl py-4 px-4 flex flex-col gap-2 justify-center bg-[#0e0e10] items-center'>
+                    <i
+                        class='fa-solid fa-lock text-4xl text-white rounded-full w-16 h-20 flex justify-center items-center border border-blue-500'></i>
+                    <span class='text-2xl text-white font-bold'>**********</span>
+                    <button
+                        class="w-full h-12 rounded-full bg-transparent transition-all hover:scale-105 border border-blue-500 text-white text-xl font-normal">Change
+                        Password</button>
+                </div>
+                <div
+                    class=' h-48 w-full sm:w-72 rounded-xl py-4 px-4 flex flex-col gap-2 justify-center bg-[#0e0e10] items-center'>
+                    <i
+                        class='fa-solid fa-phone text-4xl text-white rounded-full w-16 h-20 flex justify-center items-center border border-blue-500'></i>
+                    <span class='text-2xl text-white font-bold'>+92-318-1226301</span>
+                    <button
+                        class="w-full h-12 rounded-full bg-transparent transition-all hover:scale-105 border border-blue-500 text-white text-xl font-normal">Change
+                        Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
