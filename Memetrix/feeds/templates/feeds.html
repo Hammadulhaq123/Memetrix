@@ -1,0 +1,83 @@
+{%extends 'feeds_base.html'%}
+{%block start%}
+
+
+<div class="w-full p-4">
+    <div class="bg-[#1c1c1c] p-6 lg:p-8 rounded-3xl">
+        <div class="flex justify-start items-center gap-6 px-4 mb-4">
+            <img class="w-[2.8rem] h-[2.8rem] rounded-full"
+                src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
+            <div class="flex flex-col">
+                <span class="text-white font-semibold">{{request.user.first_name}}{{request.user.last_name}}</span>
+                <span class="location text-gray-400 font-normal">@{{request.user.username}}</span>
+            </div>
+            <div class="ml-auto flex gap-4 items-center">
+                <span class="text-gray-300 font-semibold">
+                    6h
+                </span>
+                <button
+                    class="text-white text-2xl w-8 h-8 rounded-full bg-white bg-opacity-30 flex items-center justify-center"
+                    type="button">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </div>
+
+        </div>
+        <img class="h-40 lg:h-80 rounded-2xl mb-4 w-full object-scale-up object-top"
+            src="https://images.unsplash.com/photo-1481437642641-2f0ae875f836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
+            alt="content">
+
+        <div class="functionality_panel mb-4 text-2xl px-6 flex gap-4 items-center justify-start">
+            <i class="fa-regular fa-heart text-red-600"></i>
+            <i class="fa-regular fa-comment text-gray-300"></i>
+            <i class="fa-regular fa-paper-plane text-gray-300"></i>
+        </div>
+        <p class="leading-relaxed px-4  text-gray-400">Fingerstache flexitarian street art 8-bit waistcoat.
+            Distillery
+            hexagon disrupt edison bulbche.
+            Distillery
+            hexagon disrupt edison bulbche.</p>
+    </div>
+</div>
+
+<div class="w-full p-4">
+    <div class="bg-[#1c1c1c] p-6 lg:p-8 rounded-3xl">
+        <div class="flex justify-start items-center gap-6 px-4 mb-4">
+            <img class="w-[2.8rem] h-[2.8rem] rounded-full"
+                src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
+            <div class="flex flex-col">
+                <span class="text-white font-semibold">{{request.user.first_name}}{{request.user.last_name}}</span>
+                <span class="location text-gray-400 font-normal">@{{request.user.username}}</span>
+            </div>
+            <div class="ml-auto flex gap-4 items-center">
+                <span class="text-gray-300 font-semibold">
+                    6h
+                </span>
+                <button
+                    class="text-white text-2xl w-8 h-8 rounded-full bg-white bg-opacity-30 flex items-center justify-center"
+                    type="button">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </div>
+
+        </div>
+        <img class="h-40 lg:h-80 rounded-2xl mb-4 w-full object-scale-up object-top"
+            src="https://images.unsplash.com/photo-1481437642641-2f0ae875f836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
+            alt="content">
+
+        <div class="functionality_panel mb-4 text-2xl px-6 flex gap-4 items-center justify-start">
+            <i class="fa-regular fa-heart text-red-600"></i>
+            <i class="fa-regular fa-comment text-gray-300"></i>
+            <i class="fa-regular fa-paper-plane text-gray-300"></i>
+        </div>
+        <p class="leading-relaxed px-4  text-gray-400">Fingerstache flexitarian street art 8-bit waistcoat.
+            Distillery
+            hexagon disrupt edison bulbche.
+            Distillery
+            hexagon disrupt edison bulbche.</p>
+    </div>
+</div>
+
+
+
+{%endblock%}
