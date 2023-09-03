@@ -29,7 +29,8 @@ urlpatterns = [
     path("login/", log_in, name="login"),
     path("logout/", logout_page, name="logout"),
     path("signup/", sign_up, name="signup"),
-    path("profile/", profile, name="Profile"),
+    path("profile/<id>/", profile, name="Profile"),
+    path("delete_account/<id>/", delete_account, name="delete_account"),
     path("feeds/", feeds, name="Feeds"),
     path("admin/", admin.site.urls),
 ]
