@@ -66,24 +66,25 @@
                         <div class="fixed top-12 right-4 z-[100000000] hidden my-4 text-base list-none  divide-y divide-gray-100 rounded-lg shadow bg-[#262626] dark:divide-gray-600"
                             id="user-dropdown">
                             <div class="px-4 py-3">
-                                <span class="block text-sm text-gray-900 dark:text-white">{{request.user.first_name}}
-                                    {{request.user.last_name}}</span>
+                                <a href="/profile/{{request.user.username}}"
+                                    class="block text-sm text-gray-900 dark:text-white">@ <span
+                                        class="text-blue-500">{{request.user.username}}</span></a>
                                 <span
                                     class="block text-sm  text-gray-500 truncate dark:text-gray-400">{{request.user.email}}</span>
                             </div>
-                            <ul class="py-2" aria-labelledby="user-menu-button">
+                            <ul class="p-2" aria-labelledby="user-menu-button">
                                 <li>
-                                    <a href="/profile/"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
+                                    <a href="/profile/{{request.user.username}}"
+                                        class="block px-4 py-2 text-sm text-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                                        class="block px-4 py-2 text-sm text-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
                                 </li>
 
                                 <li>
                                     <a href="/logout/"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                        class="block px-4 py-2 text-sm text-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
                                         out</a>
                                 </li>
                             </ul>
@@ -315,7 +316,7 @@
 
                             <input type="file" name="" class="hidden" id="add_post">
                             <button type="button" onclick="document.getElementById('add_post').click()"
-                                class="flex text-[#262626] h-12 w-full rounded-full justify-between items-center bg-gradient-to-r from-red-400 via-gray-300 to-blue-500 duration-100 hover:bg-blue-600 py-1 px-4 gap-2">
+                                class="flex text-[#262626] h-12 w-full rounded-full justify-between items-center bg-gradient-to-r from-red-400 via-gray-300 to-blue-500 duration-100 hover:border hover:border-blue-600 py-1 px-4 gap-2">
                                 <span class="text-md font-bold">Upload Photo/Video</span>
                                 <i
                                     class="animate-pulse bg-blue-200 w-4 h-4 rounded-full bg-opacity-40 p-4 flex items-center justify-center fa-solid fa-upload"></i>
@@ -323,7 +324,7 @@
                             <input type="file" name="" class="hidden" id="add_reel">
 
                             <button type="button" onclick="document.getElementById('add_reel').click()"
-                                class="flex text-[#262626] h-12 w-full rounded-full justify-between items-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 duration-100 hover:bg-opacity-90 py-1 px-4 gap-2">
+                                class="flex text-[#262626] h-12 w-full rounded-full justify-between items-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 duration-100 hover:border hover:border-pink-500 py-1 px-4 gap-2">
                                 <span class="text-md font-bold">Upload Reel</span>
                                 <i
                                     class="animate-pulse bg-yellow-200 w-4 h-4 rounded-full bg-opacity-40 p-4 flex items-center justify-center fa-solid fa-icons"></i>
